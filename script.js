@@ -1,8 +1,7 @@
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-  });
+const canHover = window.matchMedia('(hover: hover)').matches;
 
-  //FIX THE BUBBLES FOR THE PHONES
+if (!canHover) {
+  // Only if device CANNOT hover (so, mobile)
   document.querySelectorAll('.bubble').forEach(bubble => {
     bubble.addEventListener('click', () => {
       if (!bubble.classList.contains('revealed')) {
@@ -14,4 +13,4 @@ window.addEventListener('load', () => {
       }
     });
   });
-  
+}
