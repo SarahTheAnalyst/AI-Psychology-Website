@@ -92,5 +92,16 @@ p {
   color: transparent;
 }
 
+/* WRITING HAZE*/
+body {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+
 
 
