@@ -99,6 +99,12 @@ img {
 .bubble:hover {
   color: transparent;
 }
+.bubble.revealed {
+  background-color: #d0f0d0;
+  color: #333;
+}
+
+
 
 /* WRITING HAZE*/
 body {
